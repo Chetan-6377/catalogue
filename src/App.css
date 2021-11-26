@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+.app_search{
+    margin-top: 1.8rem;
+
+}
+.products_input{
+    padding: 1rem 1.6rem;
+    min-width: 20rem;
+    max-width: 100vw;
+    font-style: 1.5rem;
+}
+.submit_product,.analyse_btn{
+    padding: 0.6rem 1.6rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(7, 7, 7);
+    border: 2px solid ;
+    border-radius: 4px ;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.submit_product:hover,.analyse_btn:hover {
+  -webkit-animation: submit 1s;
+    animation: submit 1s ;
+  box-shadow: 0 0 0 0.2em grey;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.analyse_btn{
+    position:fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.exit_btn{
+    z-index: 100;
+    padding: 0.8rem 2.5rem;
 }
